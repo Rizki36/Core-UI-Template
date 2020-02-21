@@ -19,7 +19,7 @@
   <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>Admin page sampah kita</title>
+  <title>Judul</title>
   <link href="{{ mix('css/app.css') }}" rel="stylesheet"> 
 
 </head>
@@ -37,7 +37,7 @@
     </main>
     @include('common.aside')
   </div>
-  <script src="{{ asset('js/app.js') }}"></script>  
+  <script src="{{ mix('js/app.js') }}"></script>  
   <script>
     $.ajaxSetup({
         headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
